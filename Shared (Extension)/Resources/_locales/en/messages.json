@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "Behind The Overlay",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "This is Behind The Overlay. You should tell us what your extension does here.",
+        "description": "Description of what the extension does."
+    }
+}
