@@ -1,6 +1,15 @@
-browser.runtime.onMessage.addListener((request, sender, sendResponse) => {
-    console.log("Received request: ", request);
+// Copyright (c) 2011 The Chromium Authors. All rights reserved.
+// Use of this source code is governed by a BSD-style license that can be
+// found in the LICENSE file.
 
-    if (request.greeting === "hello")
-        sendResponse({ farewell: "goodbye" });
+// Called when the user clicks on the browser action.
+
+var chrome = chrome || browser;
+
+chrome.browserAction.onClicked.addListener(function(tab) {
+    console.log("Clicked on the browser action", browser)
+  // No tabs or host permissions needed!
+  chrome.tabs.executeScript(null, {file: "overlay_remover.js"}, function() {
+    chrome.tabs.executeScript(null, {code: "overlayRemoverRun();"});
+  });
 });

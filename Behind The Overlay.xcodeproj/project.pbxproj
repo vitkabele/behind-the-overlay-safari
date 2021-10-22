@@ -37,14 +37,8 @@
 		02AA64682721C1C100007445 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641D2721C1C100007445 /* manifest.json */; };
 		02AA64692721C1C100007445 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641E2721C1C100007445 /* background.js */; };
 		02AA646A2721C1C100007445 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641E2721C1C100007445 /* background.js */; };
-		02AA646B2721C1C100007445 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641F2721C1C100007445 /* content.js */; };
-		02AA646C2721C1C100007445 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641F2721C1C100007445 /* content.js */; };
-		02AA646D2721C1C100007445 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64202721C1C100007445 /* popup.html */; };
-		02AA646E2721C1C100007445 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64202721C1C100007445 /* popup.html */; };
-		02AA646F2721C1C100007445 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64212721C1C100007445 /* popup.css */; };
-		02AA64702721C1C100007445 /* popup.css in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64212721C1C100007445 /* popup.css */; };
-		02AA64712721C1C100007445 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64222721C1C100007445 /* popup.js */; };
-		02AA64722721C1C100007445 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64222721C1C100007445 /* popup.js */; };
+		02AA646B2721C1C100007445 /* overlay_remover.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641F2721C1C100007445 /* overlay_remover.js */; };
+		02AA646C2721C1C100007445 /* overlay_remover.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA641F2721C1C100007445 /* overlay_remover.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,11 +94,8 @@
 		02AA641B2721C1C100007445 /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; path = _locales; sourceTree = "<group>"; };
 		02AA641C2721C1C100007445 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		02AA641D2721C1C100007445 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
-		02AA641E2721C1C100007445 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; };
-		02AA641F2721C1C100007445 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
-		02AA64202721C1C100007445 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = popup.html; sourceTree = "<group>"; };
-		02AA64212721C1C100007445 /* popup.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = popup.css; sourceTree = "<group>"; };
-		02AA64222721C1C100007445 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = popup.js; sourceTree = "<group>"; };
+		02AA641E2721C1C100007445 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = background.js; sourceTree = "<group>"; usesTabs = 1; };
+		02AA641F2721C1C100007445 /* overlay_remover.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = overlay_remover.js; sourceTree = "<group>"; };
 		02AA64272721C1C100007445 /* Behind The Overlay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Behind The Overlay.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		02AA642A2721C1C100007445 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		02AA642C2721C1C100007445 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -203,10 +194,7 @@
 				02AA641C2721C1C100007445 /* images */,
 				02AA641D2721C1C100007445 /* manifest.json */,
 				02AA641E2721C1C100007445 /* background.js */,
-				02AA641F2721C1C100007445 /* content.js */,
-				02AA64202721C1C100007445 /* popup.html */,
-				02AA64212721C1C100007445 /* popup.css */,
-				02AA64222721C1C100007445 /* popup.js */,
+				02AA641F2721C1C100007445 /* overlay_remover.js */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -413,13 +401,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				02AA64692721C1C100007445 /* background.js in Resources */,
-				02AA646F2721C1C100007445 /* popup.css in Resources */,
-				02AA646D2721C1C100007445 /* popup.html in Resources */,
 				02AA64652721C1C100007445 /* images in Resources */,
 				02AA64672721C1C100007445 /* manifest.json in Resources */,
 				02AA64632721C1C100007445 /* _locales in Resources */,
-				02AA646B2721C1C100007445 /* content.js in Resources */,
-				02AA64712721C1C100007445 /* popup.js in Resources */,
+				02AA646B2721C1C100007445 /* overlay_remover.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,13 +413,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				02AA646A2721C1C100007445 /* background.js in Resources */,
-				02AA64702721C1C100007445 /* popup.css in Resources */,
-				02AA646E2721C1C100007445 /* popup.html in Resources */,
 				02AA64662721C1C100007445 /* images in Resources */,
 				02AA64682721C1C100007445 /* manifest.json in Resources */,
 				02AA64642721C1C100007445 /* _locales in Resources */,
-				02AA646C2721C1C100007445 /* content.js in Resources */,
-				02AA64722721C1C100007445 /* popup.js in Resources */,
+				02AA646C2721C1C100007445 /* overlay_remover.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
