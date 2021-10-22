@@ -170,3 +170,5 @@ function overlayRemoverRun() {
 		}
 	}
 }
+
+overlayRemoverRun()

@@ -3,13 +3,6 @@
 // found in the LICENSE file.
 
 // Called when the user clicks on the browser action.
-
-var chrome = chrome || browser;
-
-chrome.browserAction.onClicked.addListener(function(tab) {
-    console.log("Clicked on the browser action", browser)
-  // No tabs or host permissions needed!
-  chrome.tabs.executeScript(null, {file: "overlay_remover.js"}, function() {
-    chrome.tabs.executeScript(null, {code: "overlayRemoverRun();"});
-  });
+browser.browserAction.onClicked.addListener(function(tab) {
+  browser.tabs.executeScript(null, {file: "overlay_remover.js"});
 });
