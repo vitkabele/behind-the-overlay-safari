@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		029484EF2724465000C7CC66 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 029484EE2724465000C7CC66 /* Icon.png */; };
+		029484F02724465000C7CC66 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 029484EE2724465000C7CC66 /* Icon.png */; };
 		02AA642B2721C1C100007445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA642A2721C1C100007445 /* AppDelegate.swift */; };
 		02AA642D2721C1C100007445 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA642C2721C1C100007445 /* SceneDelegate.swift */; };
 		02AA64302721C1C100007445 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 02AA642E2721C1C100007445 /* LaunchScreen.storyboard */; };
@@ -17,8 +19,6 @@
 		02AA64502721C1C100007445 /* Behind The Overlay Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 02AA644F2721C1C100007445 /* Behind The Overlay Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		02AA64552721C1C100007445 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64112721C1BB00007445 /* Main.html */; };
 		02AA64562721C1C100007445 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64112721C1BB00007445 /* Main.html */; };
-		02AA64572721C1C100007445 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64132721C1BB00007445 /* Icon.png */; };
-		02AA64582721C1C100007445 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64132721C1BB00007445 /* Icon.png */; };
 		02AA64592721C1C100007445 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64142721C1BB00007445 /* Style.css */; };
 		02AA645A2721C1C100007445 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64142721C1BB00007445 /* Style.css */; };
 		02AA645B2721C1C100007445 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 02AA64152721C1BB00007445 /* Script.js */; };
@@ -84,8 +84,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		029484EE2724465000C7CC66 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		029484F127244B9E00C7CC66 /* Behind The Overlay (macOS)Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Behind The Overlay (macOS)Release.entitlements"; sourceTree = "<group>"; };
 		02AA64122721C1BB00007445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
-		02AA64132721C1BB00007445 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		02AA64142721C1BB00007445 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
 		02AA64152721C1BB00007445 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
 		02AA64162721C1BB00007445 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -147,6 +148,7 @@
 		02AA640A2721C1BA00007445 = {
 			isa = PBXGroup;
 			children = (
+				029484F127244B9E00C7CC66 /* Behind The Overlay (macOS)Release.entitlements */,
 				02AA640F2721C1BB00007445 /* Shared (App) */,
 				02AA64182721C1C100007445 /* Shared (Extension) */,
 				02AA64292721C1C100007445 /* iOS (App) */,
@@ -170,8 +172,8 @@
 		02AA64102721C1BB00007445 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				029484EE2724465000C7CC66 /* Icon.png */,
 				02AA64112721C1BB00007445 /* Main.html */,
-				02AA64132721C1BB00007445 /* Icon.png */,
 				02AA64142721C1BB00007445 /* Style.css */,
 				02AA64152721C1BB00007445 /* Script.js */,
 			);
@@ -373,12 +375,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02AA64572721C1C100007445 /* Icon.png in Resources */,
 				02AA64302721C1C100007445 /* LaunchScreen.storyboard in Resources */,
 				02AA64552721C1C100007445 /* Main.html in Resources */,
 				02AA645B2721C1C100007445 /* Script.js in Resources */,
 				02AA645F2721C1C100007445 /* Assets.xcassets in Resources */,
 				02AA64332721C1C100007445 /* Main.storyboard in Resources */,
+				029484EF2724465000C7CC66 /* Icon.png in Resources */,
 				02AA64592721C1C100007445 /* Style.css in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +389,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				02AA64582721C1C100007445 /* Icon.png in Resources */,
+				029484F02724465000C7CC66 /* Icon.png in Resources */,
 				02AA645A2721C1C100007445 /* Style.css in Resources */,
 				02AA643F2721C1C100007445 /* Main.storyboard in Resources */,
 				02AA645C2721C1C100007445 /* Script.js in Resources */,
@@ -870,7 +872,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "macOS (App)/Behind The Overlay.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Behind The Overlay (macOS)Release.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 4L258Z7H3Z;
