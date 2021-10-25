@@ -3,6 +3,10 @@
     "default_locale": "en",
 
     "name": "__MSG_extension_name__",
+    "developer":  {
+        "name": "Vit Kabele",
+        "url": "https://www.kabele.me"
+    },
     "description": "__MSG_extension_description__",
     "version": "1.0",
 
