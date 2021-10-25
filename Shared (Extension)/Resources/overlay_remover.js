@@ -1,4 +1,7 @@
 /**
+ * This script is published under the GPL license.
+ * It is taken from the original repository on the https://github.com/NicolaeNMV/BehindTheOverlay
+ *
  * This is a script that will remove overlay popups in the 99% of the cases.
  * It does so by detecting DOM elements.
  *
@@ -7,16 +10,7 @@
 var debug = true;
 
 function hideElement(element) {
-	styleImportant(element, 'display', 'none');
-}
-
-function styleImportant(element, cssProperty, cssValue) {
-	element.style[cssProperty] = '';
-	var cssText = element.style.cssText || '';
-	if (cssText.length > 0 && cssText.slice(-1) != ';')
-		cssText += ';';
-	// Some pages are using !important on elements, so we must use it too
-	element.style.cssText = cssText + cssProperty + ': ' + cssValue + ' !important;';
+   element.style.setProperty('display', 'none', 'important');
 }
 
 function isVisible(element) {
@@ -41,12 +35,12 @@ function forEachElement(nodeList, functionToApply) {
 	});
 }
 
-function collectParrents(element, predicate) {
+function collectParents(element, predicate) {
 	var matchedElement = element && predicate(element) ? [element] : [];
 	var parent = element.parentNode;
 	
 	if (parent && parent != document && parent != document.body) {
-		return matchedElement.concat(collectParrents(parent, predicate));
+		return matchedElement.concat(collectParents(parent, predicate));
 	} else {
 		return matchedElement;
 	}
@@ -91,18 +85,7 @@ function elementWeight(element, maxThreshold) {
 }
 
 function hideElementsAtZIndexNear(nearElement, thresholdZIndex) {
-	var parent = nearElement.parentNode;
-	// The case when nearElement is a document
-	if (parent === null) {
-		return;
-	}
-	var children = parent.childNodes;
-	
-	forEachElement(children, function(child) {
-		if (getZIndex(child) >= thresholdZIndex) {
-			hideElement(child);
-		}
-	})
+	nearElement.parentNode?.childNodes.filter(child => getZIndex(child) >= thresholdZIndex).map(hideElement)
 }
 
 // Check the element in the middle of the screen
@@ -110,7 +93,7 @@ function hideElementsAtZIndexNear(nearElement, thresholdZIndex) {
 function methodTwoHideElementMiddle() {
 	var overlayPopup = document.elementFromPoint(window.innerWidth / 2, window.innerHeight / 2);
 	
-	var overlayFound = collectParrents( overlayPopup, function(el) {
+	var overlayFound = collectParents(overlayPopup, function(el) {
 		return getZIndex(el) > 0;
 	});
 	
@@ -155,7 +138,7 @@ function overlayRemoverRun() {
 				var candidateWeight = elementWeight(candidate, weightThreshold)
 				if (candidateWeight < weightThreshold) {
 					if (debug){
-						console.log('Element is too lightweigh, hide it', candidate);
+						console.log('Element is too lightweight, hide it', candidate);
 					}
 					hideElement(candidate);
 				} else {
