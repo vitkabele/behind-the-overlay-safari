@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		02626FA7272740D9001FD526 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 02626FA6272740D9001FD526 /* Credits.html */; };
+		02626FA8272740D9001FD526 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 02626FA6272740D9001FD526 /* Credits.html */; };
 		029484EF2724465000C7CC66 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 029484EE2724465000C7CC66 /* Icon.png */; };
 		029484F02724465000C7CC66 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 029484EE2724465000C7CC66 /* Icon.png */; };
 		02AA642B2721C1C100007445 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02AA642A2721C1C100007445 /* AppDelegate.swift */; };
@@ -84,6 +86,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		02626FA6272740D9001FD526 /* Credits.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		02626FA9272741A0001FD526 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		029484EE2724465000C7CC66 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		029484F127244B9E00C7CC66 /* Behind The Overlay (macOS)Release.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Behind The Overlay (macOS)Release.entitlements"; sourceTree = "<group>"; };
 		02AA64122721C1BB00007445 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = ../Base.lproj/Main.html; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 		02AA640A2721C1BA00007445 = {
 			isa = PBXGroup;
 			children = (
+				02626FA9272741A0001FD526 /* README.md */,
 				029484F127244B9E00C7CC66 /* Behind The Overlay (macOS)Release.entitlements */,
 				02AA640F2721C1BB00007445 /* Shared (App) */,
 				02AA64182721C1C100007445 /* Shared (Extension) */,
@@ -176,6 +181,7 @@
 				02AA64112721C1BB00007445 /* Main.html */,
 				02AA64142721C1BB00007445 /* Style.css */,
 				02AA64152721C1BB00007445 /* Script.js */,
+				02626FA6272740D9001FD526 /* Credits.html */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -378,6 +384,7 @@
 				02AA64302721C1C100007445 /* LaunchScreen.storyboard in Resources */,
 				02AA64552721C1C100007445 /* Main.html in Resources */,
 				02AA645B2721C1C100007445 /* Script.js in Resources */,
+				02626FA7272740D9001FD526 /* Credits.html in Resources */,
 				02AA645F2721C1C100007445 /* Assets.xcassets in Resources */,
 				02AA64332721C1C100007445 /* Main.storyboard in Resources */,
 				029484EF2724465000C7CC66 /* Icon.png in Resources */,
@@ -394,6 +401,7 @@
 				02AA643F2721C1C100007445 /* Main.storyboard in Resources */,
 				02AA645C2721C1C100007445 /* Script.js in Resources */,
 				02AA64602721C1C100007445 /* Assets.xcassets in Resources */,
+				02626FA8272740D9001FD526 /* Credits.html in Resources */,
 				02AA64562721C1C100007445 /* Main.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
